@@ -16,6 +16,9 @@ blue2 = LED(21)
 numberOfCorrect = 0
 numberOfIncorrect = 0
 
+#===============================================#
+#   Light Control           ====================#
+#===============================================#
 def lightShow():
     allLightsOff()
     sleep(.3)
@@ -82,6 +85,9 @@ def answerLight(value):
     for i in xrange(num):
         allLights()[i].on()
     return
+
+# Light Related End ========================#
+
 
 def askAdd(num1, num2):
     print num1, "+", num2, "=",
